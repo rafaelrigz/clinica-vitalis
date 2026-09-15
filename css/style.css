@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: #0f6e6e;
+    color: #fff;
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header .tagline {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+.navbar {
+    background: #0a4f4f;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.sobre {
+    padding: 60px 0;
+    text-align: center;
+    background: #f4f9f9;
+}
+
+.sobre h2 {
+    color: #0f6e6e;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.sobre p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.servicos {
+    padding: 60px 0;
+}
+
+.servicos h2 {
+    text-align: center;
+    color: #0f6e6e;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.servico-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.servico-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.servico-item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.servico-texto {
+    flex: 1;
+    min-width: 250px;
+}
+
+.servico-texto h3 {
+    color: #0a4f4f;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.equipe {
+    padding: 60px 0;
+    background: #f4f9f9;
+    text-align: center;
+}
+
+.equipe h2 {
+    color: #0f6e6e;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.equipe-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.membro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.membro h3 {
+    font-size: 1.2rem;
+    color: #0a4f4f;
+}
+
+.membro .cargo {
+    color: #666;
+    font-style: italic;
+}
+
+.contato {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contato h2 {
+    color: #0f6e6e;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.form-contato {
+    max-width: 500px;
+    margin: 30px auto 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-contato label {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.form-contato input,
+.form-contato select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-contato button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #0f6e6e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-contato button:hover {
+    background: #0a4f4f;
+}
+
+.footer {
+    background: #0a4f4f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 600px) {
+    .servico-item {
+        flex-direction: column !important;
+    }
+}
